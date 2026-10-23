@@ -13,7 +13,7 @@ class JoyCaptioning:
     def __init__(self):
         self.CLIP_PATH = "google/siglip-so400m-patch14-384"
         self.LLM_ID = "hugging-quants/Meta-Llama-3.1-8B-Instruct-GPTQ-INT4"  # "
-        self.CHECKPOINT_PATH = os.path.join(Path(__file__).parent, Path("models/joycaption/wpkklhc6"))
+        self.CHECKPOINT_PATH = Path("/root/.cache/joycaption/wpkklhc6"))
 
         self.image_adapter = None
         self.clip_model = None
